@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'org.example'
@@ -12,6 +13,23 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.20.0'
+    implementation group: 'org.postgresql', name: 'postgresql', version:'42.5.1'
+}
+
+application{
+    mainClass  = 'C:\\Users\\MihaiBucur\\Desktop\\Cursruri facultate\\MPP\\Lab\\Tema2\\proiect_java\\mpp-proiect-java-MihaiB279\\agentii_turism\\src\\main\\java\\org\\example\\Main.java'
+}
+
+jar{
+    duplicatesStrategy (DuplicatesStrategy.EXCLUDE)
+    manifest{
+        attributes('Main-Class' : 'C:\\Users\\MihaiBucur\\Desktop\\Cursruri facultate\\MPP\\Lab\\Tema2\\proiect_java\\mpp-proiect-java-MihaiB279\\agentii_turism\\src\\main\\java\\org\\example\\Main.java')
+    }
+    from{
+        configurations.runtimeClasspath.collect{it.isDirectory() ? it : zipTree(it)}
+    }
 }
 
 test {

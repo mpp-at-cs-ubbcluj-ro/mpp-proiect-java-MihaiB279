@@ -1,0 +1,578 @@
+20 Mar 2023 00:16:37,137 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 00:16:37,144 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 00:16:37,146 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 00:16:37,148 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 00:16:37,151 TRACE org.example.repository.AgencyRepository 83 save - Enter saving task org.example.domain.Agency@7fcbe147
+20 Mar 2023 00:16:37,152 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 00:16:37,152 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 00:16:37,152 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 00:16:37,153 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 00:16:37,153 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 00:16:37,540 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@53bc1328)
+20 Mar 2023 00:16:37,559 TRACE org.example.repository.AgencyRepository 93 save - Saved 1 instances
+20 Mar 2023 00:16:37,560 TRACE org.example.repository.FlightRepository 85 save - Enter saving task org.example.domain.Flight@51abf713
+20 Mar 2023 00:16:37,560 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 00:16:37,561 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 00:16:37,561 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 00:16:37,561 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 00:16:37,561 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 00:16:37,601 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@eadb475)
+20 Mar 2023 00:16:37,607 TRACE org.example.repository.FlightRepository 97 save - Saved 1 instances
+20 Mar 2023 00:16:37,616 TRACE org.example.repository.ClientRepository 83 save - Enter saving task org.example.domain.Client@1e287667
+20 Mar 2023 00:16:37,616 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 00:16:37,616 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 00:16:37,617 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 00:16:37,618 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 00:16:37,618 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 00:16:37,664 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@467f77a5)
+20 Mar 2023 00:16:37,668 TRACE org.example.repository.ClientRepository 93 save - Saved 1 instances
+20 Mar 2023 00:16:37,669 TRACE org.example.repository.BookingRepository 118 save - Enter saving task org.example.domain.Booking@1bb9aa43
+20 Mar 2023 00:16:37,669 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 00:16:37,669 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 00:16:37,670 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 00:16:37,670 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 00:16:37,670 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 00:16:37,716 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@308a6984)
+20 Mar 2023 00:16:37,722 TRACE org.example.repository.BookingRepository 135 save - Saved 1 instances
+20 Mar 2023 12:18:54,274 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:18:54,283 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:18:54,287 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:18:54,290 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:18:54,294 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:18:54,294 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:18:54,295 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:18:54,295 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:18:54,296 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:18:54,296 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:18:54,921 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3c1e23ff)
+20 Mar 2023 12:18:54,965 ERROR org.example.repository.AgencyRepository 45 findOne - org.postgresql.util.PSQLException: ResultSet not positioned properly, perhaps you need to call next.
+20 Mar 2023 12:18:54,967 TRACE org.example.repository.AgencyRepository 49 findOne - Exit
+20 Mar 2023 12:20:26,799 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:20:26,812 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:20:26,817 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:20:26,822 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:20:26,828 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:20:26,829 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:20:26,829 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:20:26,830 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:20:26,831 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:20:26,832 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:20:27,395 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@28b576a9)
+20 Mar 2023 12:21:16,234 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:21:16,244 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:21:16,247 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:21:16,250 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:21:16,253 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:21:16,254 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:21:16,254 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:21:16,255 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:21:16,256 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:21:16,256 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:21:16,743 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1b1637e1)
+20 Mar 2023 12:21:16,791 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:21:16,791 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:21:16,792 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:21:16,793 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:21:16,793 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:21:16,794 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:21:16,852 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@867ba60)
+20 Mar 2023 12:21:16,865 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:21:16,865 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:21:16,866 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:21:16,866 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:21:16,867 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:21:16,867 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:21:16,927 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3f3c7bdb)
+20 Mar 2023 12:21:16,946 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:21:16,947 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:21:16,947 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:21:16,948 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:21:16,948 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:21:16,948 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:21:17,006 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1d269ed7)
+20 Mar 2023 12:21:17,028 ERROR org.example.repository.BookingRepository 65 findOne - org.postgresql.util.PSQLException: ERROR: syntax error at or near "="
+  Position: 95
+20 Mar 2023 12:21:17,030 TRACE org.example.repository.BookingRepository 69 findOne - Exit
+20 Mar 2023 12:22:12,460 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:22:12,469 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:22:12,472 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:22:12,476 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:22:12,480 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:22:12,481 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:22:12,481 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:22:12,482 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:22:12,482 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:22:12,483 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:22:13,046 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7ba63fe5)
+20 Mar 2023 12:22:13,079 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:22:13,080 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:22:13,080 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:22:13,081 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:22:13,081 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:22:13,081 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:22:13,145 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@325f7fa9)
+20 Mar 2023 12:22:13,153 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:22:13,154 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:22:13,154 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:22:13,154 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:22:13,155 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:22:13,155 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:22:13,226 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@771158fb)
+20 Mar 2023 12:22:13,253 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:22:13,254 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:22:13,255 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:22:13,255 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:22:13,256 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:22:13,257 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:22:13,338 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2d140a7)
+20 Mar 2023 12:22:13,357 ERROR org.example.repository.BookingRepository 65 findOne - org.postgresql.util.PSQLException: ERROR: syntax error at or near "="
+  Position: 96
+20 Mar 2023 12:22:13,359 TRACE org.example.repository.BookingRepository 69 findOne - Exit
+20 Mar 2023 12:23:16,073 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:23:16,093 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:23:16,097 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:23:16,100 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:23:16,108 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:23:16,109 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:23:16,110 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:23:16,111 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:23:16,112 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:23:16,113 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:23:16,732 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@18151a14)
+20 Mar 2023 12:23:16,780 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:23:16,781 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:23:16,782 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:23:16,783 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:23:16,784 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:23:16,785 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:23:16,852 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5ba745bc)
+20 Mar 2023 12:23:16,859 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:23:16,859 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:23:16,860 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:23:16,860 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:23:16,861 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:23:16,861 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:23:16,937 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@456abb66)
+20 Mar 2023 12:23:16,961 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:23:16,961 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:23:16,962 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:23:16,963 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:23:16,963 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:23:16,963 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:23:17,025 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@437ebf59)
+20 Mar 2023 12:25:07,178 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:25:07,197 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:25:07,202 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:25:07,207 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:25:07,213 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:25:07,214 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:25:07,215 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:25:07,215 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:25:07,217 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:25:07,217 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:25:07,797 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@18151a14)
+20 Mar 2023 12:25:07,831 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:25:07,832 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:25:07,832 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:25:07,833 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:25:07,834 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:25:07,834 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:25:07,904 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5ba745bc)
+20 Mar 2023 12:25:07,911 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:25:07,912 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:25:07,912 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:25:07,913 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:25:07,913 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:25:07,914 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:25:07,988 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@456abb66)
+20 Mar 2023 12:25:08,019 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:25:08,020 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:25:08,021 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:25:08,021 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:25:08,022 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:25:08,022 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:25:08,100 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@437ebf59)
+20 Mar 2023 12:26:15,779 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:26:15,792 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:26:15,798 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:26:15,803 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:26:15,813 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:26:15,814 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:26:15,815 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:26:15,816 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:26:15,818 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:26:15,819 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:26:16,383 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@73386d72)
+20 Mar 2023 12:27:07,464 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:27:07,481 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:27:07,486 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:27:07,491 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:27:07,496 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:27:07,497 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:27:07,497 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:27:07,498 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:27:07,499 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:27:07,500 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:27:08,047 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@18151a14)
+20 Mar 2023 12:27:08,080 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:27:08,081 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:27:08,081 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:27:08,082 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:27:08,083 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:27:08,083 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:27:08,145 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5ba745bc)
+20 Mar 2023 12:27:08,153 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:27:08,154 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:27:08,155 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:27:08,155 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:27:08,156 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:27:08,156 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:27:08,223 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@456abb66)
+20 Mar 2023 12:27:08,249 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:27:08,249 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:27:08,250 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:27:08,250 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:27:08,251 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:27:08,252 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:27:08,429 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@437ebf59)
+20 Mar 2023 12:28:41,641 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:28:41,672 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:28:41,677 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:28:41,681 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:28:41,686 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:28:41,687 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:28:41,688 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:28:41,689 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:28:41,690 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:28:41,691 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:28:42,234 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@18151a14)
+20 Mar 2023 12:28:42,266 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:28:42,267 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:28:42,267 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:28:42,268 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:28:42,268 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:28:42,269 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:28:42,332 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5ba745bc)
+20 Mar 2023 12:28:42,341 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:28:42,341 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:28:42,341 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:28:42,342 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:28:42,342 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:28:42,343 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:28:42,565 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@456abb66)
+20 Mar 2023 12:28:42,621 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:28:42,623 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:28:42,624 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:28:42,624 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:28:42,625 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:28:42,626 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:28:42,707 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@437ebf59)
+20 Mar 2023 12:31:09,733 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:31:09,742 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:31:09,745 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:31:09,747 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:31:09,752 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:31:09,752 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:31:09,753 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:31:09,753 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:31:09,754 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:31:09,754 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:31:10,264 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1b1637e1)
+20 Mar 2023 12:31:10,297 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:31:10,297 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:31:10,298 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:31:10,298 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:31:10,298 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:31:10,299 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:31:10,384 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@867ba60)
+20 Mar 2023 12:31:10,393 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:31:10,393 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:31:10,394 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:31:10,394 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:31:10,395 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:31:10,396 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:31:10,469 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3f3c7bdb)
+20 Mar 2023 12:31:10,490 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:31:10,491 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:31:10,491 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:31:10,492 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:31:10,493 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:31:10,493 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:31:10,555 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1d269ed7)
+20 Mar 2023 12:31:10,580 ERROR org.example.repository.BookingRepository 65 findOne - org.postgresql.util.PSQLException: The column name bookings.id was not found in this ResultSet.
+20 Mar 2023 12:31:10,581 TRACE org.example.repository.BookingRepository 69 findOne - Exit
+20 Mar 2023 12:31:51,545 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:31:51,561 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:31:51,566 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:31:51,572 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:31:51,580 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:31:51,580 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:31:51,581 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:31:51,582 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:31:51,582 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:31:51,583 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:31:52,141 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@ceb4bd2)
+20 Mar 2023 12:31:52,175 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:31:52,176 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:31:52,177 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:31:52,177 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:31:52,178 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:31:52,179 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:31:52,267 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@15fc442)
+20 Mar 2023 12:31:52,276 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:31:52,277 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:31:52,278 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:31:52,278 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:31:52,279 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:31:52,280 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:31:52,359 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@31be6b49)
+20 Mar 2023 12:31:52,381 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:31:52,382 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:31:52,383 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:31:52,384 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:31:52,384 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:31:52,384 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:31:52,445 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@1bdbf9be)
+20 Mar 2023 12:32:39,597 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:32:39,614 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:32:39,619 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:32:39,624 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:32:39,629 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:32:39,630 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:32:39,631 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:32:39,632 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:32:39,632 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:32:39,633 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:32:40,168 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@64711bf2)
+20 Mar 2023 12:32:40,201 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:32:40,201 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:32:40,202 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:32:40,203 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:32:40,203 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:32:40,204 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:32:40,268 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@654b72c0)
+20 Mar 2023 12:32:40,275 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:32:40,276 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:32:40,276 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:32:40,277 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:32:40,277 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:32:40,278 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:32:40,358 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2a3a299)
+20 Mar 2023 12:32:40,386 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:32:40,386 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:32:40,388 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:32:40,388 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:32:40,389 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:32:40,389 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:32:40,464 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@41c89d2f)
+20 Mar 2023 12:33:45,344 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:33:45,363 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:33:45,367 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:33:45,371 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:33:45,379 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:33:45,380 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:33:45,380 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:33:45,381 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:33:45,383 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:33:45,384 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:33:45,967 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@73386d72)
+20 Mar 2023 12:33:46,001 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:33:46,001 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:33:46,002 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:33:46,003 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:33:46,003 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:33:46,004 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:33:46,070 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@11ce2e22)
+20 Mar 2023 12:33:46,076 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:33:46,077 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:33:46,077 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:33:46,078 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:33:46,078 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:33:46,078 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:33:46,258 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@91c4a3f)
+20 Mar 2023 12:33:46,284 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:33:46,287 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:33:46,289 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:33:46,290 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:33:46,290 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:33:46,291 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:33:46,471 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@347bdeef)
+20 Mar 2023 12:34:21,324 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:34:21,354 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:34:21,357 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:34:21,359 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:34:21,362 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:34:21,363 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:34:21,364 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:34:21,364 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:34:21,365 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:34:21,366 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:34:21,919 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@584f5497)
+20 Mar 2023 12:34:21,956 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:34:21,956 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:34:21,957 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:34:21,958 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:34:21,959 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:34:21,959 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:34:22,169 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5aa6202e)
+20 Mar 2023 12:34:22,178 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:34:22,178 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:34:22,179 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:34:22,179 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:34:22,180 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:34:22,181 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:34:22,256 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6826c41e)
+20 Mar 2023 12:34:22,279 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:34:22,280 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:34:22,280 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:34:22,281 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:34:22,282 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:34:22,282 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:34:22,353 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@77e80a5e)
+20 Mar 2023 12:34:22,368 TRACE org.example.repository.AgencyRepository 55 findAll - Enter
+20 Mar 2023 12:34:22,369 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:34:22,369 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@584f5497)
+20 Mar 2023 12:34:22,373 TRACE org.example.repository.ClientRepository 55 findAll - Enter
+20 Mar 2023 12:34:22,374 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:34:22,375 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5aa6202e)
+20 Mar 2023 12:34:22,378 TRACE org.example.repository.FlightRepository 55 findAll - Enter
+20 Mar 2023 12:34:22,379 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:34:22,379 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6826c41e)
+20 Mar 2023 12:34:22,383 TRACE org.example.repository.BookingRepository 75 findAll - Enter
+20 Mar 2023 12:34:22,384 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:34:22,384 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@77e80a5e)
+20 Mar 2023 12:34:22,408 ERROR org.example.repository.BookingRepository 108 findAll - org.postgresql.util.PSQLException: ERROR: relation "bokings" does not exist
+  Position: 15
+20 Mar 2023 12:34:22,409 TRACE org.example.repository.BookingRepository 112 findAll - Exit
+20 Mar 2023 12:35:05,019 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:35:05,029 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:35:05,031 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:35:05,034 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:35:05,037 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:35:05,038 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:35:05,039 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:35:05,039 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:35:05,040 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:35:05,041 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:35:05,539 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@a68df9)
+20 Mar 2023 12:35:05,571 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:35:05,572 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:35:05,572 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:35:05,573 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:35:05,573 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:35:05,574 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:35:05,639 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6759f091)
+20 Mar 2023 12:35:05,646 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:35:05,646 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:35:05,647 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:35:05,647 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:35:05,648 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:35:05,648 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:35:05,724 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@654b72c0)
+20 Mar 2023 12:35:05,744 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:35:05,744 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:35:05,745 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:35:05,745 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:35:05,746 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:35:05,746 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:35:05,806 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@150d80c4)
+20 Mar 2023 12:35:05,814 TRACE org.example.repository.AgencyRepository 55 findAll - Enter
+20 Mar 2023 12:35:05,815 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:35:05,815 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@a68df9)
+20 Mar 2023 12:35:05,817 TRACE org.example.repository.ClientRepository 55 findAll - Enter
+20 Mar 2023 12:35:05,818 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:35:05,818 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@6759f091)
+20 Mar 2023 12:35:05,820 TRACE org.example.repository.FlightRepository 55 findAll - Enter
+20 Mar 2023 12:35:05,821 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:35:05,821 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@654b72c0)
+20 Mar 2023 12:35:05,823 TRACE org.example.repository.BookingRepository 75 findAll - Enter
+20 Mar 2023 12:35:05,824 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:35:05,824 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@150d80c4)
+20 Mar 2023 12:39:21,016 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:39:21,027 INFO  org.example.repository.BookingRepository 26 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:39:21,030 INFO  org.example.repository.ClientRepository 20 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:39:21,034 INFO  org.example.repository.FlightRepository 18 <init> - Initializing CarsDBRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 12:39:21,038 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 12:39:21,038 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:39:21,039 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:39:21,039 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:39:21,040 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:39:21,040 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:39:21,562 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2ba45490)
+20 Mar 2023 12:39:21,592 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 12:39:21,593 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:39:21,594 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:39:21,594 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:39:21,595 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:39:21,595 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:39:21,671 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@219f4597)
+20 Mar 2023 12:39:21,680 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 12:39:21,681 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:39:21,682 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:39:21,682 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:39:21,683 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:39:21,683 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:39:21,867 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@595f4da5)
+20 Mar 2023 12:39:21,891 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 12:39:21,892 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:39:21,892 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 12:39:21,893 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 12:39:21,893 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 12:39:21,893 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 12:39:21,964 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5b69d40d)
+20 Mar 2023 12:39:21,972 TRACE org.example.repository.AgencyRepository 55 findAll - Enter
+20 Mar 2023 12:39:21,973 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:39:21,973 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@2ba45490)
+20 Mar 2023 12:39:21,975 TRACE org.example.repository.ClientRepository 55 findAll - Enter
+20 Mar 2023 12:39:21,975 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:39:21,976 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@219f4597)
+20 Mar 2023 12:39:21,978 TRACE org.example.repository.FlightRepository 55 findAll - Enter
+20 Mar 2023 12:39:21,978 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:39:21,978 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@595f4da5)
+20 Mar 2023 12:39:21,980 TRACE org.example.repository.BookingRepository 75 findAll - Enter
+20 Mar 2023 12:39:21,981 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 12:39:21,981 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5b69d40d)
+20 Mar 2023 18:01:17,483 INFO  org.example.repository.AgencyRepository 21 <init> - Initializing AgencyRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 18:01:17,493 INFO  org.example.repository.BookingRepository 26 <init> - Initializing BookingRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 18:01:17,497 INFO  org.example.repository.ClientRepository 20 <init> - Initializing ClientRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 18:01:17,501 INFO  org.example.repository.FlightRepository 18 <init> - Initializing FlightRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+20 Mar 2023 18:01:17,504 TRACE org.example.repository.AgencyRepository 27 findOne - Enter
+20 Mar 2023 18:01:17,505 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 18:01:17,505 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 18:01:17,506 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 18:01:17,507 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 18:01:17,507 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 18:01:18,074 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@df4b72)
+20 Mar 2023 18:01:18,113 TRACE org.example.repository.ClientRepository 26 findOne - Enter
+20 Mar 2023 18:01:18,113 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 18:01:18,114 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 18:01:18,115 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 18:01:18,115 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 18:01:18,116 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 18:01:18,204 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7da10b5b)
+20 Mar 2023 18:01:18,214 TRACE org.example.repository.FlightRepository 24 findOne - Enter
+20 Mar 2023 18:01:18,214 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 18:01:18,215 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 18:01:18,215 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 18:01:18,216 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 18:01:18,216 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 18:01:18,283 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@42561fba)
+20 Mar 2023 18:01:18,302 TRACE org.example.repository.BookingRepository 32 findOne - Enter
+20 Mar 2023 18:01:18,302 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 18:01:18,303 TRACE org.example.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2023 18:01:18,304 INFO  org.example.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+20 Mar 2023 18:01:18,305 INFO  org.example.utils.JdbcUtils 31 getNewConnection - user: postgres
+20 Mar 2023 18:01:18,305 INFO  org.example.utils.JdbcUtils 32 getNewConnection - pass: password1234
+20 Mar 2023 18:01:18,372 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3c818ac4)
+20 Mar 2023 18:01:18,383 TRACE org.example.repository.AgencyRepository 55 findAll - Enter
+20 Mar 2023 18:01:18,384 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 18:01:18,384 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@df4b72)
+20 Mar 2023 18:01:18,386 TRACE org.example.repository.ClientRepository 55 findAll - Enter
+20 Mar 2023 18:01:18,387 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 18:01:18,387 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7da10b5b)
+20 Mar 2023 18:01:18,390 TRACE org.example.repository.FlightRepository 55 findAll - Enter
+20 Mar 2023 18:01:18,390 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 18:01:18,391 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@42561fba)
+20 Mar 2023 18:01:18,393 TRACE org.example.repository.BookingRepository 75 findAll - Enter
+20 Mar 2023 18:01:18,395 TRACE org.example.utils.JdbcUtils 48 getConnection - Enter
+20 Mar 2023 18:01:18,396 TRACE org.example.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@3c818ac4)

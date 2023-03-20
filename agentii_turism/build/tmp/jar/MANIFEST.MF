@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: C:\Users\MihaiBucur\Desktop\Cursruri facultate\MPP\Lab\Tema2
+ \proiect_java\mpp-proiect-java-MihaiB279\agentii_turism\src\main\java\o
+ rg\example\Main.java
+
