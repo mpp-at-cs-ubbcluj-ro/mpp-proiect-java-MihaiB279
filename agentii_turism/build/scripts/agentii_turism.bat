@@ -26,6 +26,7 @@ if "%OS%"=="Windows_NT" setlocal
 
 set DIRNAME=%~dp0
 if "%DIRNAME%"=="" set DIRNAME=.
+@rem This is normally unused
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
@@ -67,11 +68,11 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\agentii_turism-1.0-SNAPSHOT.jar;%APP_HOME%\lib\log4j-core-2.20.0.jar;%APP_HOME%\lib\postgresql-42.5.1.jar;%APP_HOME%\lib\log4j-api-2.20.0.jar;%APP_HOME%\lib\checker-qual-3.5.0.jar
+set CLASSPATH=%APP_HOME%\lib\agentii_turism-1.0-SNAPSHOT.jar;%APP_HOME%\lib\javafx-fxml-17.0.2-win.jar;%APP_HOME%\lib\javafx-controls-17.0.2-win.jar;%APP_HOME%\lib\javafx-controls-17.0.2.jar;%APP_HOME%\lib\javafx-graphics-17.0.2-win.jar;%APP_HOME%\lib\javafx-graphics-17.0.2.jar;%APP_HOME%\lib\javafx-base-17.0.2-win.jar;%APP_HOME%\lib\javafx-base-17.0.2.jar;%APP_HOME%\lib\log4j-core-2.17.1.jar;%APP_HOME%\lib\log4j-api-2.17.1.jar;%APP_HOME%\lib\postgresql-42.5.1.jar;%APP_HOME%\lib\checker-qual-3.5.0.jar
 
 
 @rem Execute agentii_turism
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %AGENTII_TURISM_OPTS%  -classpath "%CLASSPATH%" C:\Users\MihaiBucur\Desktop\Cursruri facultate\MPP\Lab\Tema2\proiect_java\mpp-proiect-java-MihaiB279\agentii_turism\src\main\java\org\example\Main.java %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %AGENTII_TURISM_OPTS%  -classpath "%CLASSPATH%" com.example.agentii_turism.HelloApplication %*
 
 :end
 @rem End local scope for the variables with windows NT shell

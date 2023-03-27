@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.agentii_turism.gui.Register">
+   <children>
+      <HBox layoutX="15.0" layoutY="76.0" prefHeight="35.0" prefWidth="259.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="103.0" text="Name">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="nameTxt" prefHeight="26.0" prefWidth="138.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="118.0" prefHeight="35.0" prefWidth="259.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="109.0" text="Username">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="usernameTxt" prefHeight="26.0" prefWidth="138.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="164.0" prefHeight="35.0" prefWidth="259.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="119.0" text="Password">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <PasswordField fx:id="passwordTxt" />
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="200.0" prefHeight="35.0" prefWidth="259.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="119.0" text="Repeat password">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <PasswordField fx:id="repeatPasswordTxt" />
+         </children>
+      </HBox>
+      <Button fx:id="submitBttn" layoutX="31.0" layoutY="275.0" mnemonicParsing="false" onAction="#onClickSubmitBttn" text="Submit" />
+   </children>
+</AnchorPane>

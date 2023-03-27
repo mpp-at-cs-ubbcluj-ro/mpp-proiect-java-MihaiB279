@@ -1,37 +1,71 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.javamodularity.moduleplugin' version '1.8.12'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+    id 'org.beryx.jlink' version '2.25.0'
 }
 
-group 'org.example'
+group 'com.example'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+ext {
+    junitVersion = '5.9.1'
+}
 
-    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.20.0'
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainClass = 'com.example.agentii_turism.HelloApplication'
+}
+
+javafx {
+    version = '17.0.2'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+dependencies {
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.1'
+
     implementation group: 'org.postgresql', name: 'postgresql', version:'42.5.1'
 }
 
-application{
-    mainClass  = 'C:\\Users\\MihaiBucur\\Desktop\\Cursruri facultate\\MPP\\Lab\\Tema2\\proiect_java\\mpp-proiect-java-MihaiB279\\agentii_turism\\src\\main\\java\\org\\example\\Main.java'
+test {
+    useJUnitPlatform()
+}
+
+jlink {
+    imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = 'app'
+    }
+}
+
+jlinkZip {
+    group = 'distribution'
 }
 
 jar{
     duplicatesStrategy (DuplicatesStrategy.EXCLUDE)
     manifest{
-        attributes('Main-Class' : 'C:\\Users\\MihaiBucur\\Desktop\\Cursruri facultate\\MPP\\Lab\\Tema2\\proiect_java\\mpp-proiect-java-MihaiB279\\agentii_turism\\src\\main\\java\\org\\example\\Main.java')
+        attributes('Main-Class' : 'com.example.agentii_turism.HelloApplication')
     }
     from{
         configurations.runtimeClasspath.collect{it.isDirectory() ? it : zipTree(it)}
     }
-}
-
-test {
-    useJUnitPlatform()
 }
