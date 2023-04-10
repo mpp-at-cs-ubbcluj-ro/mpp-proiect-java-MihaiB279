@@ -85,6 +85,7 @@
             <TableColumn fx:id="seatsColumn" prefWidth="127.19997558593752" text="Seats available" />
         </columns>
       </TableView>
-      <Button fx:id="searchBttn1clearBttn" layoutX="14.0" layoutY="431.0" mnemonicParsing="false" onAction="#onClickClear" text="Clear Table" />
+      <Button fx:id="clearBttn" layoutX="14.0" layoutY="431.0" mnemonicParsing="false" onAction="#onClickClear" text="Clear Table" />
+      <Button fx:id="logOutBttn" layoutX="117.0" layoutY="431.0" mnemonicParsing="false" onAction="#onClickLogOut" text="Log Out" />
     </children>
 </AnchorPane>

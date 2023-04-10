@@ -8,8 +8,12 @@ import com.example.agentii_turism.validators.Validator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -104,5 +108,25 @@ public class MainWindow {
     @FXML
     public void onClickClear() {
         model.setAll((List<Flight>) service.findAllFlights());
+    }
+
+    @FXML
+    public void onClickLogOut() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/com/example/agentii_turism/login.fxml"));
+        AnchorPane root = fxmlLoader.load();
+        Login login = fxmlLoader.getController();
+        login.setService(service);
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+
+        stage.show();
+        closeWindow();
+    }
+
+    private void closeWindow() {
+        Stage thisStage = (Stage) nameTxt.getScene().getWindow();
+        thisStage.close();
     }
 }

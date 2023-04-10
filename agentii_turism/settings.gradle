@@ -1,1 +1,8 @@
 rootProject.name = "agentii_turism"
+include 'FlightClient'
+include 'FlightServer'
+include 'FlightNetworking'
+include 'FlightPersistence'
+include 'FlightServices'
+include 'FlightModel'
+

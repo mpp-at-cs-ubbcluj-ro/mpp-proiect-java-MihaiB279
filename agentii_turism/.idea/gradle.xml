@@ -9,6 +9,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FlightClient" />
+            <option value="$PROJECT_DIR$/FlightModel" />
+            <option value="$PROJECT_DIR$/FlightNetworking" />
+            <option value="$PROJECT_DIR$/FlightPersistence" />
+            <option value="$PROJECT_DIR$/FlightServer" />
+            <option value="$PROJECT_DIR$/FlightServices" />
           </set>
         </option>
       </GradleProjectSettings>

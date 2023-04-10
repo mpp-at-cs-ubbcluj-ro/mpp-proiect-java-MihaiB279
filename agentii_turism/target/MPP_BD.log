@@ -1176,3 +1176,98 @@
 27 Mar 2023 15:22:25,402 INFO  com.example.agentii_turism.utils.JdbcUtils 31 getNewConnection - user: postgres
 27 Mar 2023 15:22:25,403 INFO  com.example.agentii_turism.utils.JdbcUtils 32 getNewConnection - pass: password1234
 27 Mar 2023 15:22:25,480 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@62fb7db8)
+27 Mar 2023 19:22:26,735 INFO  com.example.agentii_turism.repository.AgencyRepository 20 <init> - Initializing AgencyRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+27 Mar 2023 19:22:26,748 INFO  com.example.agentii_turism.repository.BookingRepository 25 <init> - Initializing BookingRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+27 Mar 2023 19:22:26,754 INFO  com.example.agentii_turism.repository.ClientRepository 20 <init> - Initializing ClientRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+27 Mar 2023 19:22:26,759 INFO  com.example.agentii_turism.repository.FlightRepository 20 <init> - Initializing FlightRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+27 Mar 2023 19:22:43,516 TRACE com.example.agentii_turism.repository.AgencyRepository 26 findOne - Enter
+27 Mar 2023 19:22:43,517 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:22:43,517 TRACE com.example.agentii_turism.utils.JdbcUtils 25 getNewConnection - Enter
+27 Mar 2023 19:22:43,518 INFO  com.example.agentii_turism.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+27 Mar 2023 19:22:43,519 INFO  com.example.agentii_turism.utils.JdbcUtils 31 getNewConnection - user: postgres
+27 Mar 2023 19:22:43,519 INFO  com.example.agentii_turism.utils.JdbcUtils 32 getNewConnection - pass: password1234
+27 Mar 2023 19:22:44,077 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5de60908)
+27 Mar 2023 19:22:51,039 TRACE com.example.agentii_turism.repository.AgencyRepository 26 findOne - Enter
+27 Mar 2023 19:22:51,040 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:22:51,040 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@5de60908)
+27 Mar 2023 19:22:51,155 TRACE com.example.agentii_turism.repository.FlightRepository 57 findAll - Enter
+27 Mar 2023 19:22:51,156 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:22:51,156 TRACE com.example.agentii_turism.utils.JdbcUtils 25 getNewConnection - Enter
+27 Mar 2023 19:22:51,157 INFO  com.example.agentii_turism.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+27 Mar 2023 19:22:51,158 INFO  com.example.agentii_turism.utils.JdbcUtils 31 getNewConnection - user: postgres
+27 Mar 2023 19:22:51,158 INFO  com.example.agentii_turism.utils.JdbcUtils 32 getNewConnection - pass: password1234
+27 Mar 2023 19:22:51,250 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@861bb22)
+27 Mar 2023 19:23:21,292 TRACE com.example.agentii_turism.repository.FlightRepository 86 findAllDesinationDate - Enter
+27 Mar 2023 19:23:21,293 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:23:21,293 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@861bb22)
+27 Mar 2023 19:23:32,700 TRACE com.example.agentii_turism.repository.FlightRepository 57 findAll - Enter
+27 Mar 2023 19:23:32,701 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:23:32,701 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@861bb22)
+27 Mar 2023 19:25:20,251 TRACE com.example.agentii_turism.repository.FlightRepository 26 findOne - Enter
+27 Mar 2023 19:25:20,252 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:25:20,252 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@861bb22)
+27 Mar 2023 19:25:20,264 TRACE com.example.agentii_turism.repository.ClientRepository 54 findOneNameAddress - Enter
+27 Mar 2023 19:25:20,265 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:25:20,265 TRACE com.example.agentii_turism.utils.JdbcUtils 25 getNewConnection - Enter
+27 Mar 2023 19:25:20,266 INFO  com.example.agentii_turism.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+27 Mar 2023 19:25:20,266 INFO  com.example.agentii_turism.utils.JdbcUtils 31 getNewConnection - user: postgres
+27 Mar 2023 19:25:20,267 INFO  com.example.agentii_turism.utils.JdbcUtils 32 getNewConnection - pass: password1234
+27 Mar 2023 19:25:20,354 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@4f8bfcd3)
+27 Mar 2023 19:25:20,360 TRACE com.example.agentii_turism.repository.FlightRepository 145 updateSeats - Enter
+27 Mar 2023 19:25:20,361 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:25:20,361 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@861bb22)
+27 Mar 2023 19:25:20,374 TRACE com.example.agentii_turism.repository.BookingRepository 134 save - Enter saving task com.example.agentii_turism.domain.Booking@120cb7dd
+27 Mar 2023 19:25:20,375 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:25:20,376 TRACE com.example.agentii_turism.utils.JdbcUtils 25 getNewConnection - Enter
+27 Mar 2023 19:25:20,377 INFO  com.example.agentii_turism.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+27 Mar 2023 19:25:20,377 INFO  com.example.agentii_turism.utils.JdbcUtils 31 getNewConnection - user: postgres
+27 Mar 2023 19:25:20,377 INFO  com.example.agentii_turism.utils.JdbcUtils 32 getNewConnection - pass: password1234
+27 Mar 2023 19:25:20,449 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7b364ccd)
+27 Mar 2023 19:25:20,450 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:25:20,450 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@7b364ccd)
+27 Mar 2023 19:25:20,471 TRACE com.example.agentii_turism.repository.BookingRepository 151 save - Saved 1 instances
+27 Mar 2023 19:25:20,472 TRACE com.example.agentii_turism.repository.FlightRepository 57 findAll - Enter
+27 Mar 2023 19:25:20,472 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:25:20,472 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@861bb22)
+27 Mar 2023 19:30:07,729 INFO  com.example.agentii_turism.repository.AgencyRepository 20 <init> - Initializing AgencyRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+27 Mar 2023 19:30:07,738 INFO  com.example.agentii_turism.repository.BookingRepository 25 <init> - Initializing BookingRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+27 Mar 2023 19:30:07,741 INFO  com.example.agentii_turism.repository.ClientRepository 20 <init> - Initializing ClientRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+27 Mar 2023 19:30:07,745 INFO  com.example.agentii_turism.repository.FlightRepository 20 <init> - Initializing FlightRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+27 Mar 2023 19:30:16,888 TRACE com.example.agentii_turism.repository.AgencyRepository 26 findOne - Enter
+27 Mar 2023 19:30:16,890 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:30:16,890 TRACE com.example.agentii_turism.utils.JdbcUtils 25 getNewConnection - Enter
+27 Mar 2023 19:30:16,891 INFO  com.example.agentii_turism.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+27 Mar 2023 19:30:16,892 INFO  com.example.agentii_turism.utils.JdbcUtils 31 getNewConnection - user: postgres
+27 Mar 2023 19:30:16,892 INFO  com.example.agentii_turism.utils.JdbcUtils 32 getNewConnection - pass: password1234
+27 Mar 2023 19:30:17,529 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@19da83ee)
+27 Mar 2023 19:30:27,336 TRACE com.example.agentii_turism.repository.AgencyRepository 26 findOne - Enter
+27 Mar 2023 19:30:27,337 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:30:27,337 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@19da83ee)
+27 Mar 2023 19:30:27,446 TRACE com.example.agentii_turism.repository.FlightRepository 57 findAll - Enter
+27 Mar 2023 19:30:27,446 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:30:27,447 TRACE com.example.agentii_turism.utils.JdbcUtils 25 getNewConnection - Enter
+27 Mar 2023 19:30:27,447 INFO  com.example.agentii_turism.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:postgresql://localhost:5432/agentii_turism
+27 Mar 2023 19:30:27,449 INFO  com.example.agentii_turism.utils.JdbcUtils 31 getNewConnection - user: postgres
+27 Mar 2023 19:30:27,450 INFO  com.example.agentii_turism.utils.JdbcUtils 32 getNewConnection - pass: password1234
+27 Mar 2023 19:30:27,548 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@74ece028)
+27 Mar 2023 19:46:47,742 TRACE com.example.agentii_turism.repository.AgencyRepository 26 findOne - Enter
+27 Mar 2023 19:46:47,742 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:46:47,743 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@19da83ee)
+27 Mar 2023 19:46:53,719 TRACE com.example.agentii_turism.repository.AgencyRepository 26 findOne - Enter
+27 Mar 2023 19:46:53,719 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:46:53,719 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@19da83ee)
+27 Mar 2023 19:46:53,759 TRACE com.example.agentii_turism.repository.FlightRepository 57 findAll - Enter
+27 Mar 2023 19:46:53,760 TRACE com.example.agentii_turism.utils.JdbcUtils 48 getConnection - Enter
+27 Mar 2023 19:46:53,760 TRACE com.example.agentii_turism.utils.JdbcUtils 57 getConnection - Exit with(org.postgresql.jdbc.PgConnection@74ece028)
+30 Mar 2023 00:32:47,174 INFO  com.example.agentii_turism.repository.AgencyRepository 20 <init> - Initializing AgencyRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+30 Mar 2023 00:32:47,206 INFO  com.example.agentii_turism.repository.BookingRepository 25 <init> - Initializing BookingRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+30 Mar 2023 00:32:47,226 INFO  com.example.agentii_turism.repository.ClientRepository 20 <init> - Initializing ClientRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+30 Mar 2023 00:32:47,247 INFO  com.example.agentii_turism.repository.FlightRepository 20 <init> - Initializing FlightRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+06 Apr 2023 23:54:16,285 INFO  com.example.agentii_turism.repository.AgencyRepository 20 <init> - Initializing AgencyRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+06 Apr 2023 23:54:16,347 INFO  com.example.agentii_turism.repository.BookingRepository 25 <init> - Initializing BookingRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+06 Apr 2023 23:54:16,391 INFO  com.example.agentii_turism.repository.ClientRepository 20 <init> - Initializing ClientRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+06 Apr 2023 23:54:16,433 INFO  com.example.agentii_turism.repository.FlightRepository 20 <init> - Initializing FlightRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+06 Apr 2023 23:54:34,628 INFO  com.example.agentii_turism.repository.AgencyRepository 20 <init> - Initializing AgencyRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+06 Apr 2023 23:54:34,637 INFO  com.example.agentii_turism.repository.BookingRepository 25 <init> - Initializing BookingRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+06 Apr 2023 23:54:34,640 INFO  com.example.agentii_turism.repository.ClientRepository 20 <init> - Initializing ClientRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
+06 Apr 2023 23:54:34,643 INFO  com.example.agentii_turism.repository.FlightRepository 20 <init> - Initializing FlightRepository with properties: {jdbc.user=postgres, jdbc.url=jdbc:postgresql://localhost:5432/agentii_turism, jdbc.pass=password1234} 
