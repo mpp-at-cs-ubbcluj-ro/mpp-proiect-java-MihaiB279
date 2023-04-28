@@ -19,7 +19,7 @@ public class StartRpcServer {
             System.out.println("Server properties set. ");
             serverProps.list(System.out);
         } catch (IOException e) {
-            System.err.println("Cannot find chatserver.properties "+e);
+            System.err.println("Cannot find flightserver.properties "+e);
             return;
         }
         AgencyRepository agencyRepository = new AgencyRepository(serverProps);

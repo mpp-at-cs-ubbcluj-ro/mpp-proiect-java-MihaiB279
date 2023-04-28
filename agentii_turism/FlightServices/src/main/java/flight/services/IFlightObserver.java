@@ -1,5 +1,7 @@
 package flight.services;
 
+import flight.model.Flight;
+
 public interface IFlightObserver {
-     void ticketsBought() throws Exception;
+     void ticketsBought(Iterable<Flight> flightd) throws Exception;
 }

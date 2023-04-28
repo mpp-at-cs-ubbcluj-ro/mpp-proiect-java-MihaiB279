@@ -8,15 +8,15 @@ import java.net.Socket;
 
 public class FlightRpcConcurrentServer extends AbsConcurrentServer {
     private IFlightServices flightServer;
-    public FlightRpcConcurrentServer(int port, IFlightServices chatServer) {
+    public FlightRpcConcurrentServer(int port, IFlightServices flightServer) {
         super(port);
-        this.flightServer = chatServer;
-        System.out.println("Chat- ChatRpcConcurrentServer");
+        this.flightServer = flightServer;
+        System.out.println("Flight- FlightRpcConcurrentServer");
     }
 
     @Override
     protected Thread createWorker(Socket client) {
-       // ChatClientRpcWorker worker=new ChatClientRpcWorker(chatServer, client);
+        // ChatClientRpcWorker worker=new ChatClientRpcWorker(chatServer, client);
         FlightClientRpcReflectionWorker worker=new FlightClientRpcReflectionWorker(flightServer, client);
 
         Thread tw=new Thread(worker);

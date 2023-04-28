@@ -9,7 +9,7 @@ public abstract class AbstractServer {
     private int port;
     private ServerSocket server=null;
     public AbstractServer( int port){
-              this.port=port;
+        this.port=port;
     }
 
     public void start() throws ServerException {

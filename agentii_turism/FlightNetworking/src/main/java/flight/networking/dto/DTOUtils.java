@@ -42,7 +42,7 @@ public class DTOUtils {
     }
 
     public static Iterable<Flight> getFromDTO(FlightDTO[] flightsDTO) {
-        ArrayList<Flight> flights = new ArrayList<Flight>();
+        ArrayList<Flight> flights = new ArrayList<>();
         for (FlightDTO flightDTO : flightsDTO) {
             flights.add(getFromDTO(flightDTO));
         }

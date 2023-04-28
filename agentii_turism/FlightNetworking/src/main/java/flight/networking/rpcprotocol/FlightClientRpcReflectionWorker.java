@@ -150,8 +150,8 @@ public class FlightClientRpcReflectionWorker implements Runnable, IFlightObserve
     }
 
     @Override
-    public void ticketsBought() {
-        Response resp = new Response.Builder().type(ResponseType.TICKETS_BOUGHT).build();
+    public void ticketsBought(Iterable<Flight> flights) throws Exception {
+        Response resp = new Response.Builder().data(DTOUtils.getDTO(flights)).type(ResponseType.TICKETS_BOUGHT).build();
         try {
             sendResponse(resp);
         } catch (IOException e) {

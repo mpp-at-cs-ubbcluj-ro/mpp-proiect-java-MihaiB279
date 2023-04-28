@@ -75,7 +75,8 @@ public class FlightServicesRpcProxy implements IFlightServices {
 
     private void handleUpdate(Response response) throws Exception {
         try {
-            client.ticketsBought();
+            FlightDTO[] flightsDTO=(FlightDTO[])response.data();
+            client.ticketsBought(DTOUtils.getFromDTO(flightsDTO));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -150,7 +151,9 @@ public class FlightServicesRpcProxy implements IFlightServices {
             String err=response.data().toString();
             throw new Exception(err);
         }
+        System.out.println("Primit:" + response);
         FlightDTO[] flightsDTO=(FlightDTO[])response.data();
+        System.out.println("Flights DTo in raspuns: " + flightsDTO.length);
         return DTOUtils.getFromDTO(flightsDTO);
     }
 

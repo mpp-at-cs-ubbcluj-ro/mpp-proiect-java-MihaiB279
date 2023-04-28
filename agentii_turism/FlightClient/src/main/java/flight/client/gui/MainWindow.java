@@ -126,10 +126,10 @@ public class MainWindow implements Initializable, IFlightObserver {
     }
 
     @Override
-    public void ticketsBought() throws Exception {
+    public void ticketsBought(Iterable<Flight> flights) throws Exception {
         Platform.runLater(()->{
             try {
-                model.setAll((List<Flight>) service.findAllFlights());
+                model.setAll((List<Flight>) flights);
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

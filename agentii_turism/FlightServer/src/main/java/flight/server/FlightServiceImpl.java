@@ -40,18 +40,19 @@ public class FlightServiceImpl implements IFlightServices {
     public boolean logIn(String userName, String password, IFlightObserver clientObs) throws Exception {
         Agency agency = agencyRepository.findOne(userName);
         if (agency == null || !Objects.equals(agency.getPassword(), password)) {
-            //throw new Exception("mesaj");
-            return false;
+                throw new Exception("False credentials");
         } else {
             if (loggedClients.get(agency.getId()) != null)
                 throw new Exception("User already logged in.");
             loggedClients.put(agency.getId(), clientObs);
+            System.out.println("log in: " + agency.getId());
             return Objects.equals(agency.getPassword(), password);
         }
     }
     @Override
     public void logout(Agency agency){
         loggedClients.remove(agency.getId());
+        System.out.println("log out: " + agency.getId());
     }
 
     @Override
@@ -89,7 +90,7 @@ public class FlightServiceImpl implements IFlightServices {
             System.out.println(entry.getKey());
             executor.execute(() -> {
                 try {
-                    entry.getValue().ticketsBought();
+                    entry.getValue().ticketsBought(findAllFlights());
                 } catch (Exception e) {
                     System.out.println("Notify error.");
                 }
