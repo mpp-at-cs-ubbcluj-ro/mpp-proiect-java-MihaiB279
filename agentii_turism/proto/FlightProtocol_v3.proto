@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option java_package = "flight.networking.protobuffprotocol";
+option java_outer_classname = "FlightProtobufs";
+
+message Agency{
+  string name = 1;
+  string password = 2;
+  string id = 3;
+}
+
+message BookingDetails{
+  int64 idFlight = 1;
+  string clientName = 2;
+  repeated string passengers = 3;
+  string address = 4;
+}
+
+message FlightDetails{
+  string destination = 1;
+  google.protobuf.Timestamp departureDateTime = 2;
+}
+
+message Flight{
+  int64 id = 1;
+  string destination = 2;
+  google.protobuf.Timestamp departureDateTime = 3;
+  string airport = 4;
+  int32 availableSeats = 5;
+}
+
+message Login{
+  string username = 1;
+  string password = 2;
+}
+
+message FlightRequest{
+  enum Type {Unknown = 0; Login = 1; Logout = 2; Buy = 3; GetFoundFlights = 4; Clear = 5;};
+
+  Type type = 1;
+
+  oneof payload{
+    Login login = 2;
+    Agency agency = 3;
+    FlightDetails flightDetails = 4;
+    BookingDetails bookingDetails = 5;
+  }
+}
+
+message FlightResponse{
+  enum Type {Unknown = 0; Ok = 1; Error = 2; TicketsBought = 3; GetFoundFlights = 4; GetAllFLights = 5;};
+
+  Type type = 1;
+
+  string error = 2;
+  repeated Flight flights = 3;
+}

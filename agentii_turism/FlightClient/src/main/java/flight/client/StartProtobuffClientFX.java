@@ -2,7 +2,7 @@ package flight.client;
 
 import flight.client.gui.Login;
 import flight.client.gui.MainWindow;
-import flight.networking.rpcprotocol.FlightServicesRpcProxy;
+import flight.networking.protobuffprotocol.ProtoFlightProxy;
 import flight.services.IFlightServices;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,17 +13,15 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Properties;
 
-
-public class StartRpcClientFX extends Application {
+public class StartProtobuffClientFX  extends Application {
     private static int defaultFlightPort = 55555;
     private static String defaultServer = "localhost";
-
 
     public void start(Stage primaryStage) throws Exception {
         System.out.println("In start");
         Properties clientProps = new Properties();
         try {
-            clientProps.load(StartRpcClientFX.class.getResourceAsStream("/flightclient.properties"));
+            clientProps.load(StartProtobuffClientFX.class.getResourceAsStream("/flightclient.properties"));
             System.out.println("Client properties set. ");
             clientProps.list(System.out);
         } catch (IOException e) {
@@ -42,7 +40,7 @@ public class StartRpcClientFX extends Application {
         System.out.println("Using server IP " + serverIP);
         System.out.println("Using server port " + serverPort);
 
-        IFlightServices server = new FlightServicesRpcProxy(serverIP, serverPort);
+        IFlightServices server = new ProtoFlightProxy(serverIP, serverPort);
 
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("login.fxml"));
         Parent root=loader.load();
@@ -63,7 +61,4 @@ public class StartRpcClientFX extends Application {
 
     }
 
-
 }
-
-
