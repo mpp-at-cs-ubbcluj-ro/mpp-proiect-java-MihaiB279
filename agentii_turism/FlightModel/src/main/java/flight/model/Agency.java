@@ -5,6 +5,8 @@ public class Agency extends Entity<String> {
     private String name;
     private String password;
 
+    public Agency(){};
+
     public Agency(String username, String name, String password) {
         this.setId(username);
         this.name = name;

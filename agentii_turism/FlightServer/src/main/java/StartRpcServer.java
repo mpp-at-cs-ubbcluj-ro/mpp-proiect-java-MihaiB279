@@ -1,10 +1,8 @@
+import flight.persistence.repository.jdbc.*;
 import flight.server.FlightServiceImpl;
-import flight.persistence.repository.jdbc.AgencyRepository;
-import flight.persistence.repository.jdbc.BookingRepository;
-import flight.persistence.repository.jdbc.ClientRepository;
-import flight.persistence.repository.jdbc.FlightRepository;
 import flight.networking.utils.AbstractServer;
 import flight.networking.utils.FlightRpcConcurrentServer;
+import flight.server.FlightServiceORMImpl;
 import flight.services.IFlightServices;
 
 import java.io.IOException;
@@ -22,11 +20,12 @@ public class StartRpcServer {
             System.err.println("Cannot find flightserver.properties "+e);
             return;
         }
-        AgencyRepository agencyRepository = new AgencyRepository(serverProps);
+        //AgencyRepository agencyRepository = new AgencyRepository(serverProps);
+        AgencyRepositoryORM agencyRepository = new AgencyRepositoryORM(serverProps);
         BookingRepository bookingRepository = new BookingRepository(serverProps);
         ClientRepository clientRepository = new ClientRepository(serverProps);
         FlightRepository flightRepository = new FlightRepository(serverProps);
-        IFlightServices flightServerImpl=new FlightServiceImpl(flightRepository, clientRepository, agencyRepository, bookingRepository);
+        IFlightServices flightServerImpl=new FlightServiceORMImpl(flightRepository, clientRepository, agencyRepository, bookingRepository);
         int flightServerPort=defaultPort;
         try {
             flightServerPort = Integer.parseInt(serverProps.getProperty("flight.server.port"));

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="flight.model.Agency" table="agencies">
+
+        <id name="id" column="username" type="string">
+            <generator class="assigned"/>
+        </id>
+
+        <property name="name" column="name" type="string"/>
+        <property name="password" column="password" type="string"/>
+
+    </class>
+
+</hibernate-mapping>
