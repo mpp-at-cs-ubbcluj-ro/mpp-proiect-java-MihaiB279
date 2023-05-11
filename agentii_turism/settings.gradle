@@ -6,4 +6,5 @@ include 'FlightPersistence'
 include 'FlightServices'
 include 'FlightModel'
 include 'FlightNetworkingProtobuf'
+include 'RestServices'
 

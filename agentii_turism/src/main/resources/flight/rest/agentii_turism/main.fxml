@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flight.rest.agentii_turism.gui.MainWindow">
+    <children>
+        <HBox layoutX="14.0" layoutY="66.0" prefHeight="35.0" prefWidth="250.0">
+            <children>
+                <Label prefHeight="26.0" prefWidth="78.0" text="Destinatie">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="destinationTxt" prefHeight="26.0" prefWidth="156.0">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="14.0" layoutY="108.0" prefHeight="35.0" prefWidth="250.0">
+            <children>
+                <Label prefHeight="26.0" prefWidth="78.0" text="Data plecarii">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+            <DatePicker fx:id="datePicker" prefHeight="26.0" prefWidth="156.0" />
+            </children>
+        </HBox>
+        <Button fx:id="searchBttn" layoutX="117.0" layoutY="397.0" mnemonicParsing="false" onAction="#onClickSearch" text="Search flights" />
+        <HBox layoutX="14.0" layoutY="191.0" prefHeight="35.0" prefWidth="250.0">
+            <children>
+                <Label prefHeight="26.0" prefWidth="78.0" text="Nume client">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="nameTxt" prefHeight="26.0" prefWidth="156.0">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox layoutX="14.0" layoutY="266.0" prefHeight="85.0" prefWidth="310.0">
+            <children>
+                <Label prefHeight="26.0" prefWidth="78.0" text="Nume turisti">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+                <TextArea fx:id="touristsTxtArea" prefHeight="45.0" prefWidth="222.0" />
+            </children>
+        </HBox>
+        <HBox layoutX="14.0" layoutY="231.0" prefHeight="35.0" prefWidth="250.0">
+            <children>
+                <Label prefHeight="26.0" prefWidth="78.0" text="Adresa client">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="addressTxt" prefHeight="26.0" prefWidth="156.0">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <Button fx:id="buyBttn" layoutX="14.0" layoutY="397.0" mnemonicParsing="false" onAction="#onClickBuy" text="Buy tickets" />
+      <TableView fx:id="flightsTable" layoutX="327.0" layoutY="24.0" prefHeight="407.0" prefWidth="354.0">
+        <columns>
+          <TableColumn fx:id="destColumn" prefWidth="75.0" text="Destination" />
+          <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Date and hour" />
+            <TableColumn fx:id="airportColumn" prefWidth="75.0" text="Airport" />
+            <TableColumn fx:id="seatsColumn" prefWidth="127.19997558593752" text="Seats available" />
+        </columns>
+      </TableView>
+      <Button fx:id="clearBttn" layoutX="14.0" layoutY="431.0" mnemonicParsing="false" onAction="#onClickClear" text="Clear Table" />
+      <Button fx:id="logOutBttn" layoutX="117.0" layoutY="431.0" mnemonicParsing="false" onAction="#onClickLogOut" text="Log Out" />
+    </children>
+</AnchorPane>

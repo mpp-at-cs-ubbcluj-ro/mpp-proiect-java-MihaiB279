@@ -1,9 +1,10 @@
-package flight.persistence.repository.jdbc;
+package flight.rest.agentii_turism.repository;
 
-import flight.model.Flight;
-import flight.persistence.IFlightRepository;
+import flight.rest.agentii_turism.domain.Flight;
+import flight.rest.agentii_turism.utils.JdbcUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 
 import java.sql.*;
 import java.time.LocalDateTime;
@@ -115,23 +116,6 @@ public class FlightRepository implements IFlightRepository {
         return flights;
     }
 
-    private Long getNewId() {
-        String sql = "SELECT MAX(id) FROM flights";
-        Long id = null;
-        Connection con = dbUtils.getConnection();
-        try (PreparedStatement preparedStatement = con.prepareStatement(sql)) {
-
-            ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) {
-                id = resultSet.getLong(1);
-            }
-        } catch (SQLException ex) {
-            logger.error(ex);
-            System.out.println("Error DB" + ex);
-        }
-        return id;
-    }
-
     @Override
     public Flight save(Flight entity) {
         logger.traceEntry("saving task {}", entity);
@@ -139,7 +123,7 @@ public class FlightRepository implements IFlightRepository {
         Connection con = dbUtils.getConnection();
         try (PreparedStatement ps = con.prepareStatement(sql)) {
 
-            ps.setInt(1, Math.toIntExact(getNewId() + 1));
+            ps.setInt(1, Math.toIntExact(entity.getId()));
             ps.setString(2, entity.getDestination());
             ps.setTimestamp(3, Timestamp.valueOf(entity.getDepartureDateTime()));
             ps.setString(4, entity.getAirport());
@@ -170,29 +154,6 @@ public class FlightRepository implements IFlightRepository {
             logger.error(ex);
             System.out.println("Error DB" + ex);
         }
-    }
-
-    public Flight update(Long aLong, Flight entity){
-        logger.traceEntry();
-        String sql = "UPDATE flights SET destination = ?, departureDateTime = ?, airport = ?, availableseats = ? WHERE id = ?";
-        Connection con = dbUtils.getConnection();
-        try (PreparedStatement ps = con.prepareStatement(sql)) {
-
-            ps.setString(1, entity.getDestination());
-            ps.setTimestamp(2, Timestamp.valueOf(entity.getDepartureDateTime()));
-            ps.setString(3, entity.getAirport());
-            ps.setInt(4, entity.getAvailableSeats());
-            ps.setLong(5, aLong);
-
-            ps.executeUpdate();
-
-            return null;
-        } catch (SQLException ex) {
-            logger.error(ex);
-            System.out.println("Error DB" + ex);
-        }
-
-        return entity;
     }
 
     public void delete(Long aLong) {

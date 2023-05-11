@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/FlightPersistence" />
             <option value="$PROJECT_DIR$/FlightServer" />
             <option value="$PROJECT_DIR$/FlightServices" />
+            <option value="$PROJECT_DIR$/RestServices" />
           </set>
         </option>
       </GradleProjectSettings>
