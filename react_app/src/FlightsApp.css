@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.FlightApp {
+    text-align: center;
+    color: rgb(243, 66, 66);
+}
+
+.FlightApp-h1 {
+    font-family: 'Courier New';
+    font-size: large;
+}
+
+.FlightTable {
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: medium;
+    color: rgb(247, 81, 81);
+}
+
+table.center {
+    margin: 0 auto;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-container label {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-container input {
+    flex: 1;
+}

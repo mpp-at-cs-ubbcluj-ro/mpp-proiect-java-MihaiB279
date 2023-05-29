@@ -1,0 +1,1 @@
+export const AGENCIES_FLIGHTS_BASE_URL = 'http://localhost:8080/agency/flights';

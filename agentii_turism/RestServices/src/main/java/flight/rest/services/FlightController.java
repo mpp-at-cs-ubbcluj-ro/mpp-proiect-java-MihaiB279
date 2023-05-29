@@ -8,14 +8,27 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
+import java.util.Properties;
+
 @CrossOrigin
 @RestController
 @RequestMapping({"/agency/flights"})
 public class FlightController {
-    @Autowired
     private FlightRepository flightRepository;
+    private Properties serverProps;
 
     public FlightController() {
+        Properties serverProps=new Properties();
+        try {
+            serverProps.load(FlightController.class.getResourceAsStream("/flightserver.properties"));
+            System.out.println("Server properties set. ");
+            serverProps.list(System.out);
+        } catch (IOException e) {
+            System.err.println("Cannot find flightserver.properties "+e);
+        }
+
+        flightRepository = new FlightRepository(serverProps);
     }
 
     @GetMapping

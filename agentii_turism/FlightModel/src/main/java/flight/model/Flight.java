@@ -9,6 +9,8 @@ public class Flight extends Entity<Long> {
     private String airport;
     private int availableSeats;
 
+    public Flight(){};
+
     public Flight(String dest, LocalDateTime date, String airport, int seats) {
         this.destination = dest;
         this.departureDateTime = date;

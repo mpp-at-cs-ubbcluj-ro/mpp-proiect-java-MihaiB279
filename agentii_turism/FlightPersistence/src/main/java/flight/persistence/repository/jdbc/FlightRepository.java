@@ -4,6 +4,7 @@ import flight.model.Flight;
 import flight.persistence.IFlightRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.time.LocalDateTime;
@@ -138,7 +139,6 @@ public class FlightRepository implements IFlightRepository {
         String sql = "INSERT INTO flights (id, destination, departuredatetime, airport, availableseats) VALUES(?, ?, ?, ?, ?)";
         Connection con = dbUtils.getConnection();
         try (PreparedStatement ps = con.prepareStatement(sql)) {
-
             ps.setInt(1, Math.toIntExact(getNewId() + 1));
             ps.setString(2, entity.getDestination());
             ps.setTimestamp(3, Timestamp.valueOf(entity.getDepartureDateTime()));
